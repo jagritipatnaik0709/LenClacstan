@@ -1,0 +1,79 @@
+/*some vars*/
+:root {
+    --bg: #e49aad;
+    --card-bg: #d1657d;
+    --text: #333333;
+    --buttons: rgb(238, 181, 202);
+    --font-heading: 'roboto';
+    --font-body: 'Open Sans', sans-serif;
+    --gap: 2px;
+    --src: rgba(255, 255, 255, 0.5);
+
+  }
+
+  
+/*background*/
+body{
+  background: linear-gradient(var(--bg), var(--card-bg));
+  align-items: center;
+  display: flexbox;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  padding-top: 10rem;
+  height: 100px;
+  background-image: url('./calcstan.jpg');
+
+}
+
+
+/*screen*/
+.screen-calc{
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: var(--src);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0.5rem;
+  width: 16rem;
+  height: 2rem;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 0.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  font-size: 2rem;
+  font-family: var(--font-heading);
+}
+
+/*calculator*/
+.calc{
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0.5rem;
+  width: 16rem;
+  height: 21rem;
+  justify-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+button{
+  background-color: var(--buttons);
+  border: none;
+  color: var(--text);
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: var(--gap);
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+button:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
